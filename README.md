@@ -50,7 +50,7 @@ Metriken:
 | LightGBM + SVD           | 1.0000  | 1.00           | Boosting auf reduzierter TF-IDF-Repräsentation |
 | Word2Vec + LightGBM      | 0.99999 | 1.00           | Pfad-Embeddings mit Gensim-Word2Vec |
 
-> Achtung: Sehr hohe Scores möglich, da die Datenstruktur stark geschlechtsspezifische Nutzungsmuster enthält.
+> Sehr hohe Scores, da die Datenstruktur stark geschlechtsspezifische Nutzungsmuster enthält.
 
 ---
 
