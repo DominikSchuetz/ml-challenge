@@ -19,8 +19,8 @@ Jede Zeile beschreibt:
 
 ```text
 .
-├── data/              # Trainings- & Testdaten (nicht im Repo enthalten)
-├── models/            # Trainierte Modelle (.joblib)
+├── data/              # Trainings- & Testdaten (nicht im Repo)
+├── models/            # Trainierte Modelle (.joblib, nicht im Repo)
 ├── src/               # Trainings-, Inferenz- und Analyse-Skripte
 │   ├── train.py
 │   ├── train_lgbm_svd.py
