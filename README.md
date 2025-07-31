@@ -96,7 +96,7 @@ Die finalen Metriken wurden als **OOF-Ergebnisse** (out-of-fold) auf den Validie
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate         # oder .venv\Scripts\Activate.ps1 unter Windows
+source .venv/bin/activate         
 pip install -r requirements.txt
 ```
 
