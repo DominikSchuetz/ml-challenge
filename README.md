@@ -1,5 +1,5 @@
 
-# Gender Prediction – Exxeta ML Challenge
+# Gender Prediction – ML Challenge
 
 ## 🧠 Zielsetzung
 
