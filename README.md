@@ -1,7 +1,7 @@
 
 # Gender Prediction – ML Challenge
 
-## 🧠 Zielsetzung
+## Zielsetzung
 
 Auf Basis von **Surfverhalten (path, timestamp)** soll das **Geschlecht eines Users** vorhergesagt werden.  
 Dazu stehen anonymisierte Klickdaten in `train.csv` und `test.csv` zur Verfügung.
@@ -15,7 +15,7 @@ Jede Zeile beschreibt:
 
 ---
 
-## 🗂️ Projektaufbau & Dateiorganisation
+## Projektaufbau & Dateiorganisation
 
 ```text
 .
@@ -34,7 +34,7 @@ Jede Zeile beschreibt:
 
 ---
 
-## 📂 Datenformat & Inhalte
+## Datenformat & Inhalte
 
 ```text
 data/
@@ -44,7 +44,7 @@ data/
 
 ---
 
-## 🧠 Feature-Engineering
+## Feature-Engineering
 
 Jeder Nutzer wird über aggregierte Merkmale repräsentiert:
 
@@ -62,7 +62,7 @@ Die Kombination dieser Features bildet die Grundlage für die ML-Modelle.
 
 ---
 
-## 🤖 Modellübersicht & Ansätze
+## Modellübersicht & Ansätze
 
 | Modell                 | Features                                                             | ML-Modell        | Beschreibung |
 |------------------------|----------------------------------------------------------------------|------------------|--------------|
@@ -72,7 +72,7 @@ Die Kombination dieser Features bildet die Grundlage für die ML-Modelle.
 
 ---
 
-## ✅ Validierung & Metriken
+## Validierung & Metriken
 
 Verwendet wurde ein **Stratified K-Fold Cross-Validation-Schema** mit \(k = 5\) (bzw. 3 bei aufwändigeren Modellen), um sowohl die Robustheit als auch die Generalisierungsfähigkeit der Modelle fair zu beurteilen.
 
@@ -90,7 +90,7 @@ Die finalen Metriken wurden als **OOF-Ergebnisse** (out-of-fold) auf den Validie
 
 ---
 
-## ⚙️ Reproduzierbarkeit: Training & Inferenz
+## Reproduzierbarkeit: Training & Inferenz
 
 ### Environment vorbereiten
 
@@ -128,7 +128,7 @@ python src/predict_w2v_lgbm.py --test_path data/test.csv --model_path models/w2v
 
 ---
 
-## 📄 Beispielhafte Vorhersagen
+## Beispielhafte Vorhersagen
 
 | user_id                              |      prob_m | predicted_gender   |
 |:-------------------------------------|------------:|:-------------------|
@@ -138,7 +138,7 @@ python src/predict_w2v_lgbm.py --test_path data/test.csv --model_path models/w2v
 
 ---
 
-## 💡 Fazit
+## Fazit
 
 - Der LogReg-Ansatz mit TF-IDF + Zeitverhalten ist überraschend stark – ein robuster Startpunkt für produktive Systeme.
 - Die Kombination mit SVD + Boosting zeigt leichte Vorteile bei Flexibilität, ist aber speicherintensiver.
